@@ -12,3 +12,11 @@ function solution(absolutes, signs, answer = 0) {
   }
   return answer;
 }
+
+function solution(absolutes, signs, answer = 0) {
+  let result = absolutes.map((el, i) => (signs[i] ? el : -el));
+  for (let i = 0; i < result.length; i++) {
+    answer += result[i];
+  }
+  return answer;
+}
