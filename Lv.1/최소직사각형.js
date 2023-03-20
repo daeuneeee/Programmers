@@ -1,4 +1,3 @@
-const num = [];
 function solution(sizes) {
   sizes.map((card) => card.sort((a, b) => a - b));
   return (
