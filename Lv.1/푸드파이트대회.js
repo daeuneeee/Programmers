@@ -1,0 +1,21 @@
+function solution(food) {
+  let result = "";
+  for (let i = 1; i < food.length; i++) {
+    for (let j = 1; j <= Math.floor(food[i] / 2); j++) {
+      result += i;
+    }
+  }
+  return result + 0 + result.split("").reverse().join("");
+}
+
+// 이중 for문 사용
+
+function solution(food) {
+  let result = "";
+  for (let i = 1; i < food.length; i++) {
+    result += String(i).repeat(Math.floor(food[i] / 2));
+  }
+  return result + 0 + result.split("").reverse().join("");
+}
+
+// 이중 for문 대신 repeat 메서드 사용
