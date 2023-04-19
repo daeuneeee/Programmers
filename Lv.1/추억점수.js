@@ -7,7 +7,7 @@ function solution(name, yearning, photo) {
     result.push(
       x
         .map((el) => info[el])
-        .filter((el) => el !== undefined)
+        .filter((el) => el)
         .reduce((acc, cur) => acc + cur, 0)
     );
   }
